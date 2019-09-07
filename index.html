@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -46,7 +45,17 @@
         </nav>
     </div> -->
     <section class="hero is-fullheight">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="hero-body">
+            
+                <div class="text-center">
+                        <img src="assets/img/wreath-white.svg" class="hero__wreath hero__wreath--up"  alt="Sarah and Mike" />
+                        <h1 class="hero__title u-font-script" data-aos="zoom-in">Sarah  &  Mike</h1>
+                        <p class="hero__date" data-aos="zoom-in" data-aos-delay="400">October 26, 2019</p>
+                        <img src="assets/img/wreath-white.svg" class="hero__wreath hero__wreath--down" alt="Sarah and Mike"/>
+                    </div>
+        </div>
+    </section>
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="navmenu">
             <div class="navbar-brand">
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                     data-target="navbarBasicExample">
@@ -55,34 +64,29 @@
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navmenu_items">
-                    <a class="navbar-item">
+                    <a class="navbar-item is-uppercase" href="#story">
                         our story
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item is-uppercase" href="#friends">
                         friends
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item is-uppercase" href="#location">
                         venue
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item is-uppercase" href="#rsvp">
                         rsvp
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item is-uppercase" href="#memories">
                         gallery
                     </a>
                 </div>
             </div>
         </nav>
-        <div class="hero-body">
-
-        </div>
-    </section>
-    <section class="section">
+    <section class="section" id="intro">
         <div class="container">
-            <div class="columns">
+            <!-- <div class="columns">
                 <div class="column is-paddingless is-relative about_col">
                     <div class="wedding_img" style="background-image: url('./assets/woman.jpg');"></div>
                     <div class="wedding_img_content bg-pink">
@@ -115,85 +119,387 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+
+            <div class="columns">
+                <div class="column">
+                    <h2 class="u-m-b-5 has-text-centered cursive-font">we are <br>counting down!</h2>
+                </div>
             </div>
-        </div>
-        <div class="countdown_wrap">
-            <ul id="timer_div">
-                <li class="countdown_timer is-relative">
-                    <span class="days"></span>
-                    <p>days</p>
-                </li>
-                <li class="countdown_timer is-relative">
-                    <span class="hours"></span>
-                    <p>hours</p>
-                </li>
-                <li class="countdown_timer is-relative">
-                    <span class="minutes"></span>
-                    <p>minutes</p>
-                </li>
-                <li class="countdown_timer is-relative">
-                    <span class="seconds"></span>
-                    <p>seconds</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="timeline_section">
-        <div class="timeline_row">
-            <div class="columns story_wrapper">
-                <div class="column is-relative left_story">
-                    <div class="story_timeline_text has-text-right" data-aos="zoom-in-right">
-                        <h4 class="title is-relative">title</h4>
-                        <p class="subtitle">
-                            Halvah macaroon sweet marzipan carrot cake cake cheesecake cheesecake pastry. Sugar plum
-                            chocolate bar halvah cotton candy toffee lollipop biscuit
-                        </p>
-                    </div>
-                    <figure id="sample" class="image is-4by3" data-aos="zoom-in-right">
-                        <img src="./assets/man.jpg" alt="">
-                    </figure>
-                    <div class="story_timeline_text is-hidden-tablet" data-aos="zoom-in-right">
-                        <h4 class="title is-relative">title</h4>
-                        <p class="subtitle">
-                            Halvah macaroon sweet marzipan carrot cake cake cheesecake cheesecake pastry. Sugar plum
-                            chocolate bar halvah cotton candy toffee lollipop biscuit
-                        </p>
-                    </div>
-                    <div class="story_timeline_text is-hidden-mobile has-text-right" data-aos="zoom-in-right">
-                        <h4 class="title is-relative">title</h4>
-                        <p class="subtitle">
-                            Halvah macaroon sweet marzipan carrot cake cake cheesecake cheesecake pastry. Sugar plum
-                            chocolate bar halvah cotton candy toffee lollipop biscuit
-                        </p>
+            <div class="columns">
+                <div class="column">
+                    <div class="intro-content columns">
+                        <div class="intro-content-column column">
+                            <div class="intro-content-img">
+                                <figure class="image">
+                                    <img src="./assets/woman.jpg" alt="" srcset="">
+                                </figure>
+                            </div>
+                            <div class="intro-content__text bg-pink is-flex align-items-center">
+                                <div>
+                                    <h4>About Toyosi</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro-content-column column">
+                            <div class="intro-content-img">
+                                <figure class="image">
+                                    <img src="./assets/man.jpg" alt="" srcset="">
+                                </figure>
+                            </div>
+                            <div class="intro-content__text bg-gray is-flex align-items-center">
+                                <div>
+                                    <h4>About Bayo</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="column is-relative right_story">
-                    <figure class="image is-4by3" data-aos="zoom-in-left">
-                        <img src="./assets/man.jpg" alt="">
-                    </figure>
-                    <div class="story_timeline_text is-hidden-mobile has-text-left" data-aos="zoom-in-left">
-                        <h4 class="title is-relative">title</h4>
-                        <p class="subtitle">
-                            Halvah macaroon sweet marzipan carrot cake cake cheesecake cheesecake pastry. Sugar plum
-                            chocolate bar halvah cotton candy toffee lollipop biscuit
-                        </p>
+            </div>
+
+            <div class="countdown_wrap mlauto">
+                <!-- <div class="columns">
+                    <div class="column has-text-centered">
+                        <div class="title cursive-font no-display" id="counter">
+
+                        </div>
                     </div>
-                    <div class="story_timeline_text is-hidden-tablet" data-aos="zoom-in-left">
-                        <h4 class="title is-relative">title</h4>
-                        <p class="subtitle">
-                            Halvah macaroon sweet marzipan carrot cake cake cheesecake cheesecake pastry. Sugar plum
-                            chocolate bar halvah cotton candy toffee lollipop biscuit
-                        </p>
+                </div> -->
+                <div id="counter" class="has-text-centered cursive-font">
+                        <ul id="timer_div" class="cursive-font">
+                                <li class="countdown_timer is-relative">
+                                    <span class="days"></span>
+                                    <p>days</p>
+                                    <ion-icon name="heart" class="io-icon icon-pink icon-sm"></ion-icon>
+                                </li>
+                                <li class="countdown_timer is-relative">
+                                    <span class="hours"></span>
+                                    <p>hours</p>
+                                    <ion-icon name="heart" class="io-icon icon-pink icon-sm"></ion-icon>
+                                </li>
+                                <li class="countdown_timer is-relative">
+                                    <span class="minutes"></span>
+                                    <p>minutes</p>
+                                    <ion-icon name="heart" class="io-icon icon-pink icon-sm"></ion-icon>
+                                </li>
+                                <li class="countdown_timer is-relative">
+                                    <span class="seconds"></span>
+                                    <p>seconds</p>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section story bg-gray js-section" id="story">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h2 class="u-m-t-n-3 cursive-font has-text-centered">our story</h2>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="story-timeline is-flex-tablet">
+                        <div class="story-column story-column--left">
+                            <div class="story-timeline-text">
+                                <h4>
+                                    <ion-icon name="heart"
+                                        class="icon icon--sm icon--primary bg-gray d-none d-md-block"></ion-icon>First
+                                    time we met
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <figure class="image" data-aos="zoom-in-right">
+                                <img src="assets/man.jpg" alt="Six happy years" />
+                            </figure>
+                            <div class="story-timeline-text is-hidden-tablet" data-aos="zoom-in-right">
+                                <h4>Six happy years</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</p>
+                            </div>
+                            <div class="story-timeline-text is-hidden-mobile" data-aos="zoom-in-right">
+                                <h4>
+                                    <ion-icon name="heart"
+                                        class="icon icon--sm icon--primary bg-gray d-none d-md-block"></ion-icon>She
+                                    said yes!
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
+
+                        <div class="story-column story-column--right">
+                            <figure class="image" data-aos="zoom-in-left">
+                                <img src="assets/man.jpg" alt="First time we met" />
+                            </figure>
+                            <div class="story-timeline-text is-hidden-mobile" data-aos="zoom-in-left">
+                                <h4>Six happy years<ion-icon name="heart"
+                                        class="icon icon--sm icon--primary bg-gray d-none d-md-block"
+                                        data-aos="zoom-in"></ion-icon>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</p>
+                            </div>
+                            <div class="story-timeline-text is-hidden-tablet" data-aos="zoom-in-left">
+                                <h4>She said yes!</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                            <figure class="image" data-aos="zoom-in-left">
+                                <img src="assets/man.jpg" alt="She said yes" />
+                            </figure>
+                        </div>
                     </div>
-                    <figure class="image is-4by3" data-aos="zoom-in-left">
-                        <img src="./assets/man.jpg" alt="">
-                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section friends js-section" id="friends">
+        <h2 class="cursive-font mb50 has-text-centered">our friends</h2>
+        <ul class="slider-list js-slider">
+                <li class="slider-list__item js-slide">
+                    <img src="assets/tosin.jpg" alt="Rachel Brown" class="mlr" />
+                    <p class="has-text-weight-bold">Tosin Valentina</p>
+                    <p class="is-capitalized">bridesmaid</p>
+                </li>
+                <li class="slider-list__item js-slide">
+                    <img src="assets/girl.jpg" alt="Chiara Morin" class="mlr" />
+                    <p class="has-text-weight-bold">Chiara Morin</p>
+                    <p class="is-capitalized">bridesmaid</p>
+                </li>
+                <li class="slider-list__item js-slide">
+                    <img src="assets/bridesmaid2.jpg" alt="Lindsay Floyd" class="mlr"/>
+                    <p class="has-text-weight-bold">Lindsay Floyd</p>
+                    <p class="is-capitalized">bridesmaid</p>
+                </li>
+                <li class="slider-list__item js-slide">
+                    <img src="assets/bridesmaid3.jpg" alt="Elly Beck" class="mlr"/>
+                    <p class="has-text-weight-bold">Elly Beck</p>
+                    <p class="is-capitalized">bridesmaid</p>
+                </li>
+                <li class="slider-list__item js-slide">
+                    <img src="assets/mark3.jpg" alt="Jarrad Hoffman" class="mlr"/>
+                    <p class="has-text-weight-bold">Mark Essien</p>
+                    <p class="is-capitalized">groomsman</p>
+                </li>
+                <li class="slider-list__item js-slide">
+                    <img src="assets/groom1.jpg" alt="Arthur Keller" class="mlr"/>
+                    <p class="has-text-weight-bold">Arthur Keller</p>
+                    <p class="is-capitalized">groomsman</p>
+                </li>
+                <li class="slider-list__item js-slide">
+                    <img src="assets/jegz2.jpg" alt="Alex Hiles" class="mlr"/>
+                    <p class="has-text-weight-bold">Opeyemi Jegede</p>
+                    <p class="is-capitalized">bridesmaid</p>
+                </li>
+                <li class="slider-list__item js-slide">
+                    <img src="assets/cyber.jpg" alt="Jaimie Clements" class="mlr"/>
+                    <p class="has-text-weight-bold">Mayor Cyber</p>
+                    <p class="is-capitalized">groomsman</p>
+                </li>
+            </ul>
+            <div class="is-flex slider-arrows js-slider-arrows">
+                <span class="slider-arrow js-arrow-prev">
+                    <svg width="40" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 10">
+                        <path fill="none" d="M5 10L1 5l4-5M40 5H1.5" /></svg>
+                </span>
+                <ion-icon name="heart" class="icon icon--sm icon--primary"></ion-icon>
+                <span class="slider-arrow js-arrow-next">
+                    <svg width="40" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 10">
+                        <path fill="none" d="M36 0l4 5-4 5M1 5h38.5" /></svg>
+                </span>
+            </div>
+    </section>
+    <section class="section quote bg-gray">
+        <div class="container">
+            <div class="columns is-10 is-offset-1">
+                <div class="column offset-md-1">
+                    <h3 class="quote__text font-italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua."</h3>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="section location js-section" id="location">
+        <h2 class="cursive-font has-text-centered mb50">when & where</h2>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="location__text location__text--sm bg-gray mlauto mb30" data-aos="zoom-in-right">
+                        <h6 class="is-capitalize">Engagement - 07:30AM</h6>
+                        <h3 class="is-uppercase">Waniq Events Centre</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <figure class="image">
+                        <img src="assets/location1.jpg" class="location__img location__img--sm mlauto" alt="Location"
+                            data-aos="zoom-in-right">
+                    </figure>
+                    <figure class="image">
+                        <img src="assets/location2.jpg" class="location__img" alt="Location" data-aos="zoom-in-right">
+                    </figure>
+                </div>
+                <div class="column is-half">
+                    <figure class="image">
+                        <img src="assets/location3.jpg" class="location__img location__img--sm" alt="Location"
+                            data-aos="zoom-in-left">
+                    </figure>
+                    <div class="location__text location__text--sm bg-gray" data-aos="zoom-in-left">
+                        <h6 class="is-capitalized">church service - 11:00AM</h6>
+                        <h3 class="is-uppercase">global harvest church</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+        <div class="container">
+            <div class="columns is-10 is-offset-1">
+                <div class="column">
+                    <div class="rsvp-box bg-white">
+                        <div>
+                            <div class="has-text-centered">
+                                <h3 class="title cursive-font">be our guest!</h3>
+                                <p class="subtitile">Please confirm your arrival by <mark
+                                        class="has-text-weight-bold">October 04, 2019</mark></p>
+                            </div>
+                            <form method="POST" class="rsvp-form js-form" id="rsvp-form" action="">
+                                <div class="is-flex-tablet justify-content-between">
+                                    <div class="rsvp-form__left">
+                                        <div class="is-relative">
+                                            <input class="input is-shadowless has-text-black" type="text"
+                                                name="fullname" placeholder="Full Name" required>
+                                        </div>
+                                        <div class="is-relative ">
+                                            <input type="email" name="email" class="input is-shadowless"
+                                                placeholder="Your E-mail" class="js-email" required>
+                                        </div>
+                                        <div class="is-relative ">
+                                            <input type="number" name="guests" class="input is-shadowless"
+                                                placeholder="Number of guests" required>
+                                        </div>
+                                        <div class="is-relative select is-fullwidth">
+                                            <select name="attending" required>
+                                                <option value="" disabled selected>You are attending?</option>
+                                                <option value="all">All</option>
+                                                <option value="ceremony">Ceremony</option>
+                                                <option value="party">Dinner & Party</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="rsvp-form__right">
+                                        <div class="is-relative h150">
+                                            <textarea rows="4" placeholder="Your Message"
+                                                class="h150 textarea has-fixed-size is-shadowless"
+                                                name="message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="rsvp-form-submit js-submit">
+                                    <ion-icon name="heart" class="icon icon--sm icon--white animation-pulse"></ion-icon>
+                                    <span>Send</span>
+                                    <ion-icon name="heart" class="icon icon--md icon--white animation-pulse"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+
+                        
+                        <div class="rsvp-confirmation text-center js-form-confirmation">
+                            <h4>We recieved your reservation.</h4>
+                            <span class="cursive-font">thank you!</span>
+                            <ion-icon name="heart" class="icon icon--md icon--primary"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section memories js-section" id="memories">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h2 class="cursive-font has-text-centered mb50">
+                        our memories
+                        <ion-icon name="heart" class="icon icon--sm icon--primary"></ion-icon>
+                    </h2>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+                        <div class="grid-item">
+                            <img src="assets/memory1.jpg" class="memories__img" alt="memory1" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory2.jpg" class="memories__img" alt="memory2" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory3.jpg" class="memories__img" alt="memory3" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory4.jpg" class="memories__img" alt="memory4" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory5.jpg" class="memories__img" alt="memory5" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory1.jpg" class="memories__img" alt="memory1" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory2.jpg" class="memories__img" alt="memory2" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory3.jpg" class="memories__img" alt="memory3" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory4.jpg" class="memories__img" alt="memory4" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory5.jpg" class="memories__img" alt="memory5" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="assets/js/vendors/jquery-3.3.1.min.js"></script> -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script src="home.js"></script>
 </body>
 
