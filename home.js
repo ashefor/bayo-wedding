@@ -39,7 +39,7 @@ var $slider = $('.js-slider').slick({
   centerMode: true,
   centerPadding: '5%',
   slidesToShow: 5,
-  // autoplay: true,
+  autoplay: true,
   prevArrow: '.js-arrow-prev',
   nextArrow: '.js-arrow-next',
   focusOnSelect: true,
