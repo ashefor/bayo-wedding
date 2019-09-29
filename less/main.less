@@ -11,7 +11,6 @@
 @grey: #fbfbfa;
 @white: #fff;
 
-
 .no-display{
     display: none !important
 }
@@ -162,11 +161,15 @@ footer{
     margin: 0 auto;
 }
 .hero.is-fullheight{
-    background-image: url('../assets/hero.jpg');
+    background-image: url('../assets/img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-color: @white;
+    h1,p{
+        color: black;
+        font-size: 35px;
+    }
 }
 .bg-pink{
     background-color: @pink
@@ -600,24 +603,31 @@ footer{
 }
 
 .rsvp-box {
-	padding: 50px 30px 60px;
+	padding: 50px 30px 70px;
     position: relative;
     
     .rsvp-form{
         margin-top: 50px;
+        .checkboxes{
+            display: flex;
+            flex-direction: column;
 
+            .control{
+                padding: 5px 10px
+            }
+        }
         input,textarea,select{
-            width: 100%;
+            // width: 100%;
             font-style: initial;
             color: #1c1c1c;
             padding: 5px 10px;
             margin-bottom: 25px;
-            border-radius: 0;
+            // border-radius: 0;
         }
 
         input,select{
-            border: 0;
-	        border-bottom: 1px solid #898989;
+            // border: 0;
+	        // border-bottom: 1px solid #898989;
         }
     }
 }
@@ -639,7 +649,22 @@ footer{
 @media(min-width: 768px) {
 	.rsvp-box {
 		padding: 50px 40px 110px;
-	}
+    }
+    .rsvp-form{
+        .checkboxes{
+            display: flex;
+            flex-direction: column;
+
+            .control{
+                display: flex;
+                flex-direction: column;
+
+                .radio + .radio {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
 
 
@@ -676,7 +701,7 @@ footer{
 .rsvp-form-submit {
 	display: block;
 	position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     max-width: 300px;
 	width: 100%;
 	background-color: #ffd7d7;
@@ -703,8 +728,11 @@ footer{
 }
 
 .rsvp-form__right {
-	margin-top: 10px;
+    margin: auto !important;
+    display: none;
+    // margin-top: 10px;
 }
+
 
 @media(min-width: 768px) {
 	.rsvp-form__left {
@@ -712,6 +740,7 @@ footer{
 	}
 
 	.rsvp-form__right {
+        display: inline-block;
 		width: 49%;
 		margin-top: 0;
 	}
@@ -724,6 +753,7 @@ footer{
 
 	.rsvp-form-submit {
         max-width: 300px;
+        bottom: 5%;
         
         .icon:first-of-type{
             left: 100px;

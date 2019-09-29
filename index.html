@@ -13,10 +13,9 @@
 <body>
     <section class="hero is-fullheight">
         <div class="hero-body">
-
             <div class="container has-text-centered">
-                <h1 class="title has-text-white cursive-font" data-aos="zoom-in">OA</h1>
-                <p class="subtitle has-text-white has-text-weight-light" data-aos="zoom-in" data-aos-delay="400">October
+                <h1 class="title cursive-font is-size-1" data-aos="zoom-in">OA</h1>
+                <p class="subtitle has-text-weight-light is-size-1" data-aos="zoom-in" data-aos-delay="400">October
                     5, 2019</p>
             </div>
         </div>
@@ -156,8 +155,8 @@
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
-                            <figure class="image" data-aos="zoom-in-right">
-                                <img src="assets/man.jpg" alt="Six happy years" />
+                            <figure class="image is-1by1" data-aos="zoom-in-right">
+                                <img src="assets/firsttime.jpg" alt="Six happy years" />
                             </figure>
                             <div class="story-timeline-text is-hidden-tablet" data-aos="zoom-in-right">
                                 <h4>Six happy years</h4>
@@ -180,8 +179,8 @@
                         </div>
 
                         <div class="story-column story-column--right">
-                            <figure class="image" data-aos="zoom-in-left">
-                                <img src="assets/man.jpg" alt="First time we met" />
+                            <figure class="image is-1by1" data-aos="zoom-in-left">
+                                <img src="assets/turnup.jpg" alt="First time we met" />
                             </figure>
                             <div class="story-timeline-text is-hidden-mobile" data-aos="zoom-in-left">
                                 <h4>Six happy years<ion-icon name="heart"
@@ -200,8 +199,8 @@
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </div>
-                            <figure class="image" data-aos="zoom-in-left">
-                                <img src="assets/man.jpg" alt="She said yes" />
+                            <figure class="image is-1by1" data-aos="zoom-in-left">
+                                <img src="assets/yes.PNG" alt="She said yes" />
                             </figure>
                         </div>
                     </div>
@@ -323,37 +322,69 @@
                                 <h3 class="title cursive-font">be our guest!</h3>
                                 <p class="subtitile">Please confirm your arrival by <mark
                                         class="has-text-weight-bold">October 04, 2019</mark></p>
+                                        <p> if you have any questions or need directions please message me on <a href="mailto:opejegz@gmail.com
+                                            ">opejegz@gmail.com
+                                        </a> and I'll get back to you</p>
                             </div>
-                            <form method="POST" class="rsvp-form js-form" id="rsvp-form" action="">
+                            <!-- <form method="POST" class="rsvp-form js-form" id="rsvp-form" action="">
                                 <div class="is-flex-tablet justify-content-between">
                                     <div class="rsvp-form__left">
                                         <div class="is-relative">
-                                            <input class="input is-shadowless has-text-black" type="text"
+                                            <label for="fullname" class="label">Name <span style="color: red">*</span>
+                                                <input style="margin-top: 5px" class="input is-shadowless has-text-black" id="fullname" type="text"
                                                 name="fullname" placeholder="Full Name" required>
+                                            </label>
                                         </div>
-                                        <div class="is-relative ">
-                                            <input type="email" name="email" class="input is-shadowless"
-                                                placeholder="Your E-mail" class="js-email" required>
+                                        <div class="is-relative checkboxes">
+                                                  <p class="has-text-weight-bold">
+                                                        Are you coming? <span style="color: red">*</span>
+                                                  </p>
+                                                  <div class="control">
+                                                    <label class="radio">
+                                                      <input type="radio" name="rsvp">
+                                                      Yes
+                                                    </label>
+                                                    <label class="radio">
+                                                      <input type="radio" name="rsvp">
+                                                      No
+                                                    </label>
+                                                    <label class="radio">
+                                                      <input type="radio" name="rsvp">
+                                                      Maybe
+                                                    </label>
+                                                  </div>
                                         </div>
-                                        <div class="is-relative ">
-                                            <input type="number" name="guests" class="input is-shadowless"
-                                                placeholder="Number of guests" required>
+                                        <div class="is-relative checkboxes">
+                                            <p class="has-text-weight-bold">
+                                                 Alone? <span style="color: red">*</span>
+                                            </p>
+                                            <div class="control">
+                                              <label class="radio" >
+                                                <input type="radio" onclick="showvalue(event)" name="guest" id="tester" value="yes">
+                                                Yes I am
+                                              </label>
+                                              <label class="radio">
+                                                <input type="radio" name="guest" onclick="showvalue(event)" value="no">
+                                                No. I want a plus one
+                                              </label>
+                                            </div>
                                         </div>
-                                        <div class="is-relative select is-fullwidth">
-                                            <select name="attending" required>
-                                                <option value="" disabled selected>You are attending?</option>
-                                                <option value="all">All</option>
-                                                <option value="ceremony">Ceremony</option>
-                                                <option value="party">Dinner & Party</option>
-                                            </select>
-                                        </div>
+                                        <div class="is-relative guestdeets">
+                                            <label for="guestname" class="label">
+                                                Name of Guest
+                                                <input style="margin-top: 5px" type="text" class="input is-shadowless"
+                                                placeholder="Name of Guest" id="guestname">
+                                            </label>
+                                        </div> 
+                                        <div class="is-relative h150">
+                                            <label for="message" class="label">Your message</label>
+                                                <textarea style="margin-top: 5px" rows="4" placeholder="Your Message"
+                                                    class="h150 textarea has-fixed-size is-shadowless"
+                                                    name="message" id="message"></textarea>
+                                            </div>
                                     </div>
                                     <div class="rsvp-form__right">
-                                        <div class="is-relative h150">
-                                            <textarea rows="4" placeholder="Your Message"
-                                                class="h150 textarea has-fixed-size is-shadowless"
-                                                name="message"></textarea>
-                                        </div>
+                                        <img src="./assets/image.png" alt="" srcset="">
                                     </div>
                                 </div>
                                 <button type="submit" class="rsvp-form-submit js-submit">
@@ -361,15 +392,15 @@
                                     <span>Send</span>
                                     <ion-icon name="heart" class="icon icon--md icon--white animation-pulse"></ion-icon>
                                 </button>
-                            </form>
+                            </form> -->
                         </div>
 
 
-                        <div class="rsvp-confirmation text-center js-form-confirmation">
+                        <!-- <div class="rsvp-confirmation text-center js-form-confirmation">
                             <h4>We recieved your reservation.</h4>
                             <span class="cursive-font">thank you!</span>
                             <ion-icon name="heart" class="icon icon--md icon--primary"></ion-icon>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -392,25 +423,10 @@
                         <div class="grid-sizer"></div>
                         <div class="gutter-sizer"></div>
                         <div class="grid-item">
-                            <img src="assets/memory1.jpg" class="memories__img" alt="memory1" />
+                            <img src="assets/mem.jpg" class="memories__img" alt="memory1" />
                         </div>
                         <div class="grid-item">
-                            <img src="assets/memory2.jpg" class="memories__img" alt="memory2" />
-                        </div>
-                        <div class="grid-item">
-                            <img src="assets/memory3.jpg" class="memories__img" alt="memory3" />
-                        </div>
-                        <div class="grid-item">
-                            <img src="assets/memory4.jpg" class="memories__img" alt="memory4" />
-                        </div>
-                        <div class="grid-item">
-                            <img src="assets/memory5.jpg" class="memories__img" alt="memory5" />
-                        </div>
-                        <div class="grid-item">
-                            <img src="assets/memory1.jpg" class="memories__img" alt="memory1" />
-                        </div>
-                        <div class="grid-item">
-                            <img src="assets/memory2.jpg" class="memories__img" alt="memory2" />
+                            <img src="assets/mem2.JPG" class="memories__img" alt="memory2" />
                         </div>
                         <div class="grid-item">
                             <img src="assets/memory3.jpg" class="memories__img" alt="memory3" />
@@ -420,6 +436,21 @@
                         </div>
                         <div class="grid-item">
                             <img src="assets/memory5.jpg" class="memories__img" alt="memory5" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory1.jpg" class="memories__img" alt="memory1" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/memory2.jpg" class="memories__img" alt="memory2" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/mem4.jpg" class="memories__img" alt="memory3" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/mem5.jpg" class="memories__img" alt="memory4" />
+                        </div>
+                        <div class="grid-item">
+                            <img src="assets/mem6.jpg" class="memories__img" alt="memory5" />
                         </div>
                     </div>
                 </div>

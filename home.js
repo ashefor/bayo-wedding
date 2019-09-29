@@ -92,3 +92,17 @@ $(".navbar-burger").click(function(){
     })
   }
 })
+
+let check = document.querySelector('#tester')
+function showvalue(event){
+  let guest = document.querySelector('.guestdeets')
+  console.log(event.target.value)
+  let val = event.target.value
+  if(val === 'yes'){
+    console.log(guest)
+    guest.classList.add('no-display')
+  }
+}
+// check.addEventListener('click', function(){
+//   console.log('cliked')
+// })
